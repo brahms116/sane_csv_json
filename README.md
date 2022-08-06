@@ -7,11 +7,11 @@ Users can rename columns and specify the desired type for each column
 
 This crate was built using...
 
-- serde
-- serde_json
-- csv_rs
-- chrono
-- clap
+- [serde](https://github.com/serde-rs/serde)
+- [serde_json](https://github.com/serde-rs/json)
+- [csv_rs](https://github.com/BurntSushi/rust-csv)
+- [chrono](https://github.com/chronotope/chrono)
+- [clap](https://github.com/clap-rs/clap)
 
 ## Example
 
@@ -78,7 +78,10 @@ data is blank, this default will be used. Defaults to `null`
 
 ### `format`
 
-only applicable if `type` is set to `date`, uses chrono's `NaiveDate` at the moment, see relevant formats here
+only applicable if `type` is set to `date`, uses chrono's `NaiveDate` at the
+moment, see relevant formats
+[here](https://docs.rs/chrono/latest/chrono/format/strftime/index.html)
 
-###`trueString` & `falseString`
+### `trueString` & `falseString`
+
 only applicable when `type` is set to `boolean`, specifies the strings which to parse as `true` and `false`
