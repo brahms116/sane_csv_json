@@ -58,20 +58,27 @@ Below is an example configuration
 ]
 ```
 
-### Keys
+### `type`
 
-`type` specifies the desired type for the column can be one of ....
+specifies the desired type for the column can be one of ....
 
 - `integer`
 - `float`
 - `date`
 - `boolean`
 
-`name` refers to the desired name of the column, if left blank, the csv header will be used
+### `name`
 
-`default` you can provide a default value with this key, if the parse fails or
+refers to the desired name of the column, if left blank, the csv header will be used
+
+### `default`
+
+you can provide a default value with this key, if the parse fails or
 data is blank, this default will be used. Defaults to `null`
 
-`format` only applicable if `type` is set to `date`, uses chrono's `NaiveDate` at the moment, see relevant formats here
+### `format`
 
-`trueString` & `falseString` only applicable when `type` is set to `boolean`, specifies the strings which to parse as `true` and `false`
+only applicable if `type` is set to `date`, uses chrono's `NaiveDate` at the moment, see relevant formats here
+
+###`trueString` & `falseString`
+only applicable when `type` is set to `boolean`, specifies the strings which to parse as `true` and `false`
